@@ -63,4 +63,18 @@ img{
 
 .third-division{
     background-color: #f9f4f0;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.timeline{
+    font-weight: bold;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding: 3%;
+    font-size: 28px;
+}
+
+.timeline-items{
+    margin-bottom: 2%;
 }
