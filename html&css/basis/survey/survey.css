@@ -1,0 +1,23 @@
+body{
+    background-color: #6779c3;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.form-input{
+    border: 0;
+    border-radius: 7px;
+    height: 40px;
+    width: 250px;
+    margin: 10px;
+}
+
+.gender{
+    display: inline-block;
+}
+
+.gender-radio{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

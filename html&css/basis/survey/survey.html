@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="survey.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<form class="main-form">
+    <div class="form-title">
+        <h1>Beginner Survey form</h1>
+    </div>
+    <div class="personal-info">
+        <fieldset class="personal-info-fieldset">
+            <legend>Personal Information</legend>
+            <div class="form-field">
+                <label for="name"> Name
+                    <input type="text" id="name" class="form-input" placeholder="Enter your full name">
+                </label>
+            </div>
+            <div class="form-field">
+                <label for="address"> Address
+                    <input type="text" id="address" class="form-input" placeholder="Enter your address">
+                </label>
+            </div>
+            <div class="form-field">
+                <label for="email"> Email
+                    <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                </label>
+            </div>
+            <div class="form-field">
+                <label for="phone"> Phone
+                    <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number">
+                </label>
+            </div>
+            <div class="gender-title"><h3 class="gender-title">Please select your gender: </h3></div>
+            <div class="gender">
+                <label for="male">
+                    <input class="gender-radio" id="male" type="radio" value="Male" name="gender">
+                    Male
+                </label>
+                <label for="female">
+                    <input class="gender-radio" id="female" type="radio" value="Female" name="gender">
+                    Female
+                </label>
+                <label for="non-binary">
+                    <input class="gender-radio" id="non-binary" type="radio" value="Non-binary" name="gender">
+                    Non-Binary
+                </label>
+                <label for="pnts">
+                    <input class="gender-radio" id="pnts" type="radio" value="PNTS" name="gender">
+                    Prefer not to say
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="additional-info">
+        <fieldset class="additional-info-fieldset">
+            <legend class="additional-info-legend">
+                Additional Information
+            </legend>
+            <div class="additional-info-title">
+                <h3>Write your background Information here</h3>
+            </div>
+            <div class="textarea">
+                <label>
+                    <textarea class="textarea"></textarea>
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
+</body>
+</html>
