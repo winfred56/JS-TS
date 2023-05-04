@@ -5,8 +5,15 @@ import Welcome from "./components/Welcome";
 function App() {
   return (
     <div className="App">
-        <Greet />
-        <Welcome/>
+        <Greet name={'Winfred'} heroName={'Mega mind'}>
+            <p>This is a paragraph tag inside the custom greet tag </p>
+        </Greet>
+        <Greet name={'Adu'}>
+            <button type="button">Click me</button>
+        </Greet>
+        <Greet name={'Acheampong'}/>
+        <Welcome name={'Winfred'} heroName={'Mega mind'}/>
+        <Welcome name={'Kwame'} heroName={'Killer'}/>
     </div>
   );
 }
