@@ -3,6 +3,7 @@ import Greet from "./components/greet";
 import Welcome from "./components/Welcome";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
+import FunctionalClick from "./components/FunctionalClick";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Greet name={'Winfred'} heroName={'Mega mind'}>
             <p>This is a paragraph tag inside the custom greet tag </p>
         </Greet>
+        <FunctionalClick />
         {/*<Greet name={'Adu'}>*/}
         {/*    <button type="button">Click me</button>*/}
         {/*</Greet>*/}
