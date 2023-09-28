@@ -18,9 +18,12 @@ body {
     padding: 5px;
     text-align: center;
     border-radius: 5px;
-    list-style: none;
+    list-style-type: none;
 }
 
+#navbar ul li{
+    display: inline;
+}
 
 #navbar ul li a{
     text-decoration: none;
@@ -28,9 +31,7 @@ body {
 }
 #navbar ul li a:hover{
     color: black;
-}
-#navbar ul li{
-    display: inline;
+    
 }
 
 .main {
@@ -57,4 +58,18 @@ body {
     background-color: aqua;
     margin: 10px;
     border-radius: 5px;
+    clear: both;
+}
+
+h1{
+    font-size: xx-large;
+    text-align: center;
+    color: brown;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+      top: 50%;  
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
 }
