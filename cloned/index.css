@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 2px;
+    background-color: purple;
+    border: none;
+    color: #fff;
+}
+button:hover{
+    background-color: #590059;
+}
+.header {
+    padding: 10px 50px;
+    background-color: #eaeaea;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    color: black;
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+}
+
+.nav-links {
+    width: 75%;
+}
+
+.nav-links ul {
+    display: inline-flex;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.login-btn {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
