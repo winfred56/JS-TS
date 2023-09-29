@@ -16,14 +16,16 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: #590059;
 }
 
-h1{
+h1 {
     font-size: 80px;
-    margin:0;
+    margin: 0;
 }
+
 .header {
     padding: 10px 50px;
     background-color: #eaeaea;
@@ -58,29 +60,34 @@ h1{
     gap: 20px;
 }
 
-.main-section{
+.main-section {
     margin: 50px 100px 0 100px;
     display: inline-flex;
     align-items: center;
     /*text-align: center;*/
 }
-.main-heading{
-    width:40%
+
+.main-heading {
+    width: 40%
 }
-.heading-subtitle{
+
+.heading-subtitle {
     font-size: 28px;
 }
-.btn-contactSales{
+
+.btn-contactSales {
     border: 1px solid purple;
     background-color: transparent;
     color: purple;
     font-weight: bold;
     cursor: pointer;
 }
-.btn-contactSales:hover{
+
+.btn-contactSales:hover {
     color: white;
 }
-.business-image{
+
+.business-image {
     width: auto;
 }
 
