@@ -57,6 +57,12 @@ button{
     color: white;
 }
 
+.animation{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .form-container {
     /*background-color: aqua;*/
     width: 40%;
