@@ -1,42 +1,89 @@
-body{
+body {
     margin: 0;
     font-family: Inter, serif;
+    font-size: 14px;
 }
 
-h3{
+h3 {
     font-family: Montserrat, helvetica, serif;
+    font-size: 30px;
 }
 
-.main-container{
+input{
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    width: 352px;
+    border: 1px solid #d9d9d9;
+    color: transparent;
+}
+
+button{
+    background-color: #36205D;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    padding: 1em;
+    width: 380px;
+    border-radius: 8px;
+}
+
+.main-container {
     width: 100%;
     height: 100%;
     display: inline-flex;
 }
 
-.purple-container{
+.purple-container {
     text-align: center;
-    background-image: linear-gradient(to bottom,#744FB5, #36205D, #36205D);
+    background-image: linear-gradient(to bottom, #744FB5, #36205D, #36205D);
     width: 60%;
     height: 100vh;
 }
 
-.botr_logo{
+.botr_logo {
     width: 20%;
     position: relative;
     right: 15%;
     top: 40%;
 }
-.logo-subtitle{
+
+.logo-subtitle {
+    margin-top: 2px;
     position: relative;
     right: 15%;
     top: 40%;
     color: white;
 }
 
-.form-container{
-    background-color: aqua;
-    text-align: center;
+.form-container {
+    /*background-color: aqua;*/
     width: 40%;
     height: 100vh;
+    justify-content: center
+}
 
+.form-info {
+    position: relative;
+    top: 30%;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.hello {
+    margin-bottom: 0;
+}
+
+.hello-subtitle {
+    margin-top: 4px;
+}
+
+.login-form{
+    position: relative;
+    top: 30%;
+    margin-left: 25%;
+    margin-right: auto;
 }
