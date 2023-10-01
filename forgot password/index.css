@@ -7,13 +7,20 @@ h4{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans, serif;
     margin: 0;
 }
-h2{
+h1{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans, serif;
     margin: 0;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
 }
 a{
     text-decoration: none;
     color: black;
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
 }
 input{
     border: 1px solid #d9d9d9;
@@ -37,9 +44,12 @@ button{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .header img{
     width: 10%;
+    margin-bottom: 10px;
 }
 .header form{
     text-align: right;
@@ -51,8 +61,8 @@ button{
 
 .body-container{
     background-color: #d9d9d9;
-    height: 400px;
-
+    height: 500px;
+    margin: 0;
 }
 .card-container{
     background-color:#ffffff;
@@ -67,12 +77,95 @@ button{
     transform: translateY(-50%);
 }
 .card-container input{
-    width: 92%;
+    width: 93%;
     margin-bottom: 20px;
 }
-
-
+.form-btns{
+    text-align:right;
+}
 .cancel-btn{
     color: black;
     background-color: #CCCCCC;
 }
+
+
+
+
+.footer{
+    color: white;
+    background-image: linear-gradient(to bottom, #744FB5, #36205D, #36205D);
+}
+.footer hr{
+    width: 80%;
+}
+.site-name{
+    margin: 0;
+    color: white;
+    font-weight: lighter;
+    padding-top: 40px;
+    font-family: Inter, Consolas, "Courier New", monospace, serif;
+    padding-bottom: 20px;
+}
+.top-footer{
+    text-align: center;
+}
+
+.contact-us{
+    width: 197px;
+    height: 60px;
+    color: #36205D;
+    background-color:#5AC1EC;
+    margin-bottom: 30px;
+}
+
+.bottom-footer{
+    text-align: center;
+    display: inline-flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.bottom-footer img{
+    width: 6%;
+}
+.links{
+    width: 89%;
+    text-align: center;
+    vertical-align: middle;
+}
+.links ul{
+    display: inline-flex;
+    gap: 30px;
+    position: relative;
+    top: 25%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+.links ul li{
+    display: inline-flex;
+    gap: 30px;
+    margin: 0;
+}
+.links a{
+    color: #fff;
+}
+.social-icons ul{
+    display: inline-flex;
+    gap: 20px;
+    position: relative;
+    top: 25%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+.social-icons ul li a{
+    color: #fff;
+}
+
+.poweredBy{
+    margin: 30px 0 0;
+    text-align: center;
+}
+.poweredBy a{color: #fff;}
