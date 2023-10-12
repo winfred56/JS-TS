@@ -7,14 +7,20 @@
 </head>
 <body class="text-gray-600 font-body">
 <div class="grid md:grid-cols-4"><!-- Content wrapper -->
-    <div class="col-span-1 md:flex md:justify-end">
+    <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
-            <div>
+            <div class="flex justify-between items-center">
                 <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                     <a class="hover:text-gray-700" href="#">Food Ninja</a>
                 </h1>
+                <div class="px-4 cursor-pointer hidden md:hidden lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>
+
+                </div>
             </div>
-            <ul class="text-sm mt-6">
+            <ul class="text-sm mt-6 hidden md:block">
                 <li class="text-gray-700 py-2 font-bold">
                     <a class="flex justify-end px-4 border-r-4 border-primary" href="#">
                         <span>Home</span>
