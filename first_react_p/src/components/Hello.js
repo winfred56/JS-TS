@@ -4,6 +4,8 @@
 // }
 
 /// Using ES6 syntax for creating a function
-const Hello = () => <h1>Hello World!</h1>;
+const name = 'Winfred'
+const displayName = ()=>'Winfred is learning react'
+const Hello = () => <h1>Hello World! {displayName()}</h1>;
 
 export default Hello;
