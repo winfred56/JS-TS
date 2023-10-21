@@ -1,13 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Hello from "./components/Hello";
-import Message from "./components/Message";
+import Profile from "./components/Profile";
+// import Hello from "./components/Hello";
+// import Message from "./components/Message";
 
 function App() {
   return (
     <div className="App">
-      <Hello />
-      <Message />
+      {/*<Hello />*/}
+      {/*<Message />*/}
+        <Profile name="Winfred" lastname="Adu-Aceampon">
+            <h4>Winfred is enjoying react</h4>
+        </Profile>
     </div>
   );
 }

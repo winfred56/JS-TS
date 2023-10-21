@@ -4,7 +4,7 @@
 // }
 
 /// Using ES6 syntax for creating a function
-const name = 'Winfred'
+name = 'Winfred'
 const displayName = ()=>'Winfred is learning react'
 const Hello = () => <h1>Hello World! {displayName()}</h1>;
 
