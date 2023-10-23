@@ -6,6 +6,7 @@ import Counter from "./components/Counter";
 import Resume from "./components/Resume";
 import FunctionalCounter from "./components/FunctionalCounter";
 import ConditionalComponent from "./components/ConditionalComponent";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Resume name="Winfred"/>
         <FunctionalCounter />
         <ConditionalComponent />
+        <Products />
     </div>
   );
 }
