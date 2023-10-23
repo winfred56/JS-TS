@@ -8,7 +8,7 @@ import Profile from "./components/Profile";
 // import ConditionalComponent from "./components/ConditionalComponent";
 // import Products from "./components/Products";
 // import Form from "./components/Form";
-
+import Todo from "./components/Todo";
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
       {/*  <ConditionalComponent />*/}
       {/*  <Products />*/}
       {/*  <Form />*/}
+      <Todo />
     </div>
   );
 }
