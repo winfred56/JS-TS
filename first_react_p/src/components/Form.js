@@ -1,4 +1,5 @@
 import {Component} from "react";
+import * as events from "events";
 
 export default class Form extends Component {
     state = {
@@ -9,10 +10,15 @@ export default class Form extends Component {
             firstName:event.target.value
         })
     }
+    submitController = (event)=>{
+        event.preventDefault()
+        console.log({fname: this.state.firstName})
+    }
     render() {
         return (
-            <form>
+            <form onSubmit={this.submitController}>
                 <input type="text" value={this.state.firstName} placeholder="Firstname" onChange={this.formController}/>
+                <button type="submit">Save</button>
             </form>
         )
     }
