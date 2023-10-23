@@ -5,6 +5,7 @@ import Profile from "./components/Profile";
 import Counter from "./components/Counter";
 import Resume from "./components/Resume";
 import FunctionalCounter from "./components/FunctionalCounter";
+import ConditionalComponent from "./components/ConditionalComponent";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Counter />
         <Resume name="Winfred"/>
         <FunctionalCounter />
+        <ConditionalComponent />
     </div>
   );
 }
