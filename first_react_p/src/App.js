@@ -7,6 +7,7 @@ import Resume from "./components/Resume";
 import FunctionalCounter from "./components/FunctionalCounter";
 import ConditionalComponent from "./components/ConditionalComponent";
 import Products from "./components/Products";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <FunctionalCounter />
         <ConditionalComponent />
         <Products />
+        <Form />
     </div>
   );
 }
