@@ -14,15 +14,8 @@ export default function Navbar() {
 
     const [openMenu, menuController] = useState(false);
 
-    // Use useEffect to update the menu state when the menu is closed
-    useEffect(() => {
-        if (!openMenu) {
-            menuController(false);
-        }
-    }, [openMenu]);
-
     return (
-        <header className="sticky top-0 backdrop-blur-md bg-pink-400">
+        <header className="sticky top-0 backdrop-blur-md">
             <nav className="flex px-10 py-2 md:px-20">
                 <h1 className="text-3xl">Logo</h1>
                 <ul className="hidden md:flex flex-1 gap-10 justify-end items-center">
