@@ -14,19 +14,19 @@ export default function Navbar() {
     const [openMenu, menuController] = useState(false);
 
     return (
-        <header className="sticky top-0 bg-black backdrop-blur-md">
+        <header className="bg-black backdrop-blur-md">
             <nav className="flex px-10 py-2 md:px-20">
                 <h1 className="text-3xl text-white">Logo</h1>
                 <ul className="hidden md:flex flex-1 gap-10 justify-end items-center">
                     {navigation.map((navItem) => (
-                        <li key={navItem.name} className="text-base text-white hover:text-blue-700">
+                        <li key={navItem.name} className="text-base text-white hover:text-orange-300">
                             <a href={navItem.href}>{navItem.name}</a>
                         </li>
                     ))}
                 </ul>
                 <button
                     onClick={() => menuController(!openMenu)}
-                    className="md:hidden object-contain text-2xl flex flex-1 gap-10 justify-end items-center text-white hover:text-blue relative"
+                    className="md:hidden object-contain text-2xl flex flex-1 gap-10 justify-end items-center text-white hover:text-orange-300 relative"
                 >
                     {openMenu ? <RiCloseFill /> : <RiMenuLine />}
                 </button>
@@ -39,7 +39,7 @@ export default function Navbar() {
                 >
                     <ul>
                         {navigation.map((navItem) => (
-                            <li key={navItem.name} className="text-base text-black hover:text-blue text-left pl-4 py-2">
+                            <li key={navItem.name} className="text-base text-black hover:text-orange-300 text-left pl-4 py-2">
                                 <a href={navItem.href}>{navItem.name}</a>
                             </li>
                         ))}
