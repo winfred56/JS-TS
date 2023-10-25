@@ -57,7 +57,7 @@ export default function About() {
                 </div>
             </div>
             <div className="grid grid-flow-row-dense grid-cols-1 py-20 md:grid-cols-3">
-                {works.map((workItem, i) =>(
+                {works.map((workItem) =>(
                     <div className="backdrop-blur-2xl border border-orange-950 mr-4 mt-4 rounded-2xl hover:border hover:border-b-8 hover:border-orange-400">
                         <div className="flex gap-10 text-white p-4 m-4">
                             <div className="bg-orange-400 w-fit h-fit md:text-2xl p-4 rounded-full lg:text-3xl">
@@ -70,39 +70,6 @@ export default function About() {
                         </div>
                     </div>
                 ))}
-                {/*<div className="backdrop-blur-2xl border border-orange-950 mr-4 rounded-2xl">*/}
-                {/*    <div className="flex gap-10 text-white p-4 m-4">*/}
-                {/*        <div className="bg-orange-400 w-fit h-fit md:text-2xl p-4 rounded-full lg:text-3xl">*/}
-                {/*            <MdOutlineDesignServices/>*/}
-                {/*        </div>*/}
-                {/*        <div className="items-center">*/}
-                {/*            <h1 className="text-2xl items-center font-medium font-mono text-left md:text-3xl">Design</h1>*/}
-                {/*            <p className="font-light text-left">Cras mollis orci id lacus congue, pharetra molestie nibh posuere. Aliquam nec cursus turpis. Praesent egestas molestie felis, in venenatis libero luctus sed. Duis posuere, urna ac maximus ultrices, sem arcu fermentum magna, sit amet blandit ante dui non est. Duis vel erat eget ante lacinia condimentum quis ut sapien.</p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                {/*<div className="backdrop-blur-2xl border border-orange-950 rounded-2xl">*/}
-                {/*    <div className="flex gap-10 text-white p-4 m-4">*/}
-                {/*        <div className="bg-orange-400 w-fit h-fit md:text-2xl p-4 rounded-full lg:text-3xl">*/}
-                {/*            <MdOutlineDesignServices/>*/}
-                {/*        </div>*/}
-                {/*        <div className="items-center">*/}
-                {/*            <h1 className="text-2xl items-center font-medium font-mono text-left md:text-3xl">Design</h1>*/}
-                {/*            <p className="font-light text-left">Cras mollis orci id lacus congue, pharetra molestie nibh posuere. Aliquam nec cursus turpis. Praesent egestas molestie felis, in venenatis libero luctus sed. Duis posuere, urna ac maximus ultrices, sem arcu fermentum magna, sit amet blandit ante dui non est. Duis vel erat eget ante lacinia condimentum quis ut sapien.</p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                {/*<div className="backdrop-blur-2xl border border-orange-950 ml-4 rounded-2xl">*/}
-                {/*    <div className="flex gap-10 text-white p-4 m-4">*/}
-                {/*        <div className="bg-orange-400 w-fit h-fit md:text-2xl p-4 rounded-full lg:text-3xl">*/}
-                {/*            <MdOutlineDesignServices/>*/}
-                {/*        </div>*/}
-                {/*        <div className="items-center">*/}
-                {/*            <h1 className="text-2xl items-center font-medium font-mono text-left md:text-3xl">Design</h1>*/}
-                {/*            <p className="font-light text-left">Cras mollis orci id lacus congue, pharetra molestie nibh posuere. Aliquam nec cursus turpis. Praesent egestas molestie felis, in venenatis libero luctus sed. Duis posuere, urna ac maximus ultrices, sem arcu fermentum magna, sit amet blandit ante dui non est. Duis vel erat eget ante lacinia condimentum quis ut sapien.</p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
             </div>
         </div>
     )
