@@ -20,7 +20,7 @@ export default function Gallery(){
     return (
         <div className="grid grid-flow-row-dense gap-4 grid-cols-2 md:grid-cols-4 items-center w-full px-2.5 md:px-20 pb-20">
             {pictures.map((pic)=>(
-                <img src={pic.src} className="rounded-2xl w-full h-48 md:h-64" alt={pic.alt} key={pic.src} />
+                <img src={pic.src} className="rounded-2xl w-full h-48 md:h-64 hover:rotate-2" alt={pic.alt} key={pic.src} />
             ))}
         </div>
     );
