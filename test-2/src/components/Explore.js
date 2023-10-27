@@ -17,7 +17,7 @@ export default function Explore(){
                 <div className="py-32 col-span-1">
                     <h1 className="font-Headings text-4xl md:text-7xl text-left font-semibold">Discover the beauty around the world</h1>
                     <p className="text-[#252525] font-Subtitles text-sm md:text-base text-left py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu.</p>
-                    <Link to="/"><button type="button" className="text-left bg-black text-white rounded-md px-4 py-2 hover:rotate-6">Get Started</button></Link>
+                    <Link to="/inspiration"><button type="button" className="text-left bg-black text-white rounded-md px-4 py-2 hover:rotate-6">Get Started</button></Link>
                 </div>
                 <div className="col-span-2">
                     <div className="grid grid-flow-row-dense gap-5 grid-cols-1 md:grid-cols-2">

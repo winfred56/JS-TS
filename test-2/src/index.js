@@ -8,6 +8,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import Explore from "./components/Explore";
+import Inspiration from "./components/Inspiration";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     {
         path: "explore",
         element: <Explore />
+    },
+    {
+        path: "inspiration",
+        element: <Inspiration />
     }
 ]);
 
