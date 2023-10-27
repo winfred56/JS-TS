@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import Explore from "./components/Explore";
 import Inspiration from "./components/Inspiration";
+import Practice from "./components/Practice";
+import Order from "./components/Order";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
     {
         path: "inspiration",
         element: <Inspiration />
+    },
+    {
+        path: "practice",
+        element: <Practice />
+    },
+    {
+        path: "order",
+        element: <Order />
     }
 ]);
 
