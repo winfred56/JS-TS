@@ -22,15 +22,15 @@ export default function Explore(){
                 <div className="col-span-2">
                     <div className="grid grid-flow-row-dense gap-5 grid-cols-1 md:grid-cols-2">
                         <img className="rounded-2xl w-full my-10" src={krishna} alt="" />
-                        <img className="rounded-2xl w-full my-48" src={marita} alt="" />
+                        <img className="rounded-2xl w-full mt-48 mb-20" src={marita} alt="" />
                     </div>
                 </div>
             </div>
             <div className="grid grid-flow-row-dense gap-10 pb-20 grid-cols-1 mt-0 md:grid-cols-3 md:px-36">
-                {pictures.map((pic)=>(
+                {pictures.map((pic,index)=>(
                     <div>
-                        <h1 className="md:text-5xl text-[#252525] text-left font-Headings font-medium">{pic.title}</h1>
-                        <img className="rounded-2xl w-full" src={pic.src} alt={pic.alt} key={pic.alt}/>
+                        <h1 className="md:text-5xl text-[#252525] text-left font-Headings font-medium mb-2 opacity-25">{pic.title}</h1>
+                        <img className={`${index%2===0 ? `rotate-3` : `-rotate-3` } rounded-2xl w-full`} src={pic.src} alt={pic.alt} key={pic.alt}/>
                     </div>
                 ))}
             </div>
