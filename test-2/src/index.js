@@ -11,6 +11,7 @@ import Explore from "./components/Explore";
 import Inspiration from "./components/Inspiration";
 import Practice from "./components/Practice";
 import Order from "./components/Order";
+import ExpressFeel from "./components/ExpressFeel";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
     {
         path: "order",
         element: <Order />
-    }
+    },
+    {
+        path: "express",
+        element: <ExpressFeel />
+    },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

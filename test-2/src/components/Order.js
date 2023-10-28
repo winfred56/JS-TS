@@ -16,8 +16,8 @@ export default function Order(){
                 <img src={o2} className="" alt=""/>
                 <h1 className="font-serif text-4xl md:text-8xl text-left font-medium pt-10">THE eWatch with the newest microchip technology</h1>
                 <p className="font-Subtitles text-sm font-medium md:text-base text-[#333333] text-left pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget diam.</p>
-                <Link to="/inspiration"><button type="button" className="text-left bg-black text-white rounded-lg mr-5 px-4 mt-5 py-2">Order now</button></Link>
-                <Link to="/inspiration"><button type="button" className="text-left bg-transparent text-black border border-black rounded-lg px-4 py-2">Explore more</button></Link>
+                <Link to="/express"><button type="button" className="text-left bg-black text-white rounded-lg mr-5 px-4 mt-5 py-2">Order now</button></Link>
+                <Link to="/express"><button type="button" className="text-left bg-transparent text-black border border-black rounded-lg px-4 py-2">Explore more</button></Link>
                 <div className="mt-10 border border-black rounded-3xl flex gap-5">
                     {works.map((work)=>(
                         <div className="p-5 w-full text-lg">
