@@ -12,6 +12,7 @@ import Inspiration from "./components/Inspiration";
 import Practice from "./components/Practice";
 import Order from "./components/Order";
 import ExpressFeel from "./components/ExpressFeel";
+import NextLevel from "./components/NextLevel";
 
 const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
     {
         path: "express",
         element: <ExpressFeel />
+    },
+    {
+        path: "nextLevel",
+        element: <NextLevel />
     },
 ]);
 

@@ -16,7 +16,7 @@ export default function ExpressFeel(){
             <h1 className="font-Headings text-4xl text-left md:text-8xl font-semibold">
                 you express the feelings
             </h1>
-            <Link to="/express"><button type="button" className="text-left bg-black text-white rounded-lg mr-5 px-4 mt-8 py-2">Order now</button></Link>
+            <Link to="/nextLevel"><button type="button" className="text-left bg-black text-white rounded-lg mr-5 px-4 mt-8 py-2">Order now</button></Link>
 
             <div className="grid grid-flow-row-dense gap-4 mt-20 grid-cols-1 md:grid-cols-4">
                 {info.map((i) => (
