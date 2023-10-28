@@ -1,6 +1,21 @@
 import rsz_1inside from './../assets/rsz_1inside.jpg';
 import {Link} from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+
 export default function Inspiration(){
+    const [seconds, setSeconds] = useState(60);
+
+    useEffect(() => {
+        // Exit the useEffect when the timer reaches 0
+        if (seconds === 0) return;
+
+        const timer = setInterval(() => {
+            setSeconds((prevSeconds) => prevSeconds - 1);
+        }, 1000);
+
+        // Clean up the timer when the component unmounts
+        return () => clearInterval(timer);
+    }, [seconds]);
     return (
         <div className="items-center">
             <div className="grid grid-flow-row-dense grid-cols-1 md:grid-cols-2">
