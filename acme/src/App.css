@@ -144,3 +144,15 @@
   width: 0;
   height: 0;
 }
+
+.services {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  background: linear-gradient(180deg, #838383 -45.27%,hsla(0,0%,54%,0) 114.95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
