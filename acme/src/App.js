@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Clients from "./components/Clients";
 import RecentWorks from "./components/RecentWorks";
+import Precess from "./components/Process";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Hero/>
             <Clients/>
             <RecentWorks />
+            <Precess />
         </div>
     );
 }
