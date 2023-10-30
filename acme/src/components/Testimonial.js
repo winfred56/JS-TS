@@ -7,13 +7,14 @@ export default function Testimonial() {
                     different projects, and they're phenomenal. The name matches the performance, they're incredibly
                     fast!”</h1>
             </div>
-            <div className="flex flex-row items-center justify-center space-x-3">
-                <img src={harshPic} alt="" className="flex flex-col items-start space-y-1 rounded-full pt-24"/>
-                    <span className="">Harsh Patel</span>
-                    <span className="">Founder at Macro</span>
+            <div className="flex flex-row items-center justify-center pt-10 md:pt-28 space-x-3">
+                <img src={harshPic} alt="" className="flex flex-col justify-center items-start space-y-1 rounded-full"/>
+                    <div className="flex flex-col items-start justify-center space-y-1">
+                        <span className="text-white text-sm lg:text-lg font-semibold">Harsh Patel</span>
+                        <span className="text-[#B2AEAE] text-xs lg:text-sm">Founder at Macro</span>
+                    </div>
             </div>
 
         </div>
     )
 }
-
