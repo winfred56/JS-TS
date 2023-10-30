@@ -22,12 +22,12 @@ export default function Clients() {
     return (
         <div className="bg-background text-center text-sm md:text-base md:pt-10 px-5 md:px-20 text-body-text">
             <p className="font-body-text">TRUSTED BY CLIENTS FROM TOP COMPANIES</p>
-            <div className="container mx-auto flex flex-wrap justify-center items-center my-5">
+            <div className="container mx-auto flex flex-wrap justify-center items-center py-5">
                 <div className="carousel-container-clients carousel-fade-clients">
                     <div className="carousel-clients space-x-16">
                         <ul className="content flex gap-4">
                             {clients.map((client) =>(
-                                <li key={client.src} className=""><img src={client.src} width={client.width} height={client.height} alt={client.alt} className=""/></li>
+                                <li key={client.src} className=""><img src={client.src} alt={client.alt} className="h-[60px] md:w-[1300px] "/></li>
                             ))}
                         </ul>
                     </div>
