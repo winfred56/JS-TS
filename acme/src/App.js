@@ -8,6 +8,7 @@ import Testimonial from "./components/Testimonial";
 import Services from "./components/Services";
 import Reviews from "./components/Reviews";
 import Footer from "./components/footer";
+import Questions from "./components/Questions";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Testimonial />
             <Services />
             <Reviews />
+            <Questions />
             <Footer />
         </div>
     );
