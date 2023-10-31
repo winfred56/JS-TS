@@ -12,7 +12,7 @@ export default function Footer(){
                 </h1>
                 <p className="lg:px-80 md:px-64 lg:pt-20 pt-10 text-body-text font-body-text text-xl md:text-2xl">Start making design a competitive advantage, and enable your business to get to that next level.</p>
                 <button type="button" className="border border-white bg-transparent rounded-lg mt-10 md:mt-16 bg-white py-5 lg:p-8 px-32 lg:px-[27rem] lg:py-12 text-md lg:text-2xl font-bold text-white tracking-tight cursor-pointer hover:bg-white hover:text-black hover:scale-105 transition duration-300 ease-out">Get started today</button>
-                <footer className="bg-primary border-t border-white/10 mt-20 lg:mt-[10rem]">
+                <footer className="bg-background w-full text-sm md:text-base pt-10 md:pt-20 px-5 md:px-20 text-body-text border-t border-white/10 mt-20 lg:mt-[10rem]">
                     <div className="mx-auto max-w-8xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
                         <div className="flex justify-center space-x-6 md:order-2">
                             <a href="https://twitter.com/" className="text-white hover:text-white/50">
