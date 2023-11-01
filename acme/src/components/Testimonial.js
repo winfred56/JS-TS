@@ -10,8 +10,8 @@ export default function Testimonial() {
             <div className="flex flex-row items-center justify-center pt-10 md:pt-28 space-x-3">
                 <img src={harshPic} alt="" className="flex flex-col justify-center items-start space-y-1 rounded-full"/>
                     <div className="flex flex-col items-start justify-center space-y-1">
-                        <span className="text-white text-sm lg:text-lg font-semibold">Harsh Patel</span>
-                        <span className="text-[#B2AEAE] text-xs lg:text-sm">Founder at Macro</span>
+                        <h4 className="text-white text-sm lg:text-lg font-Headings font-semibold">Harsh Patel</h4>
+                        <p className="text-[#B2AEAE] text-xs font-body-text lg:text-sm">Founder at Macro</p>
                     </div>
             </div>
 
