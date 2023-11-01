@@ -1,8 +1,26 @@
 import diamond from './../assets/diamond-scribble.svg'
 import bolt from './../assets/bolt-scribble-hero.svg'
 import emoji from './../assets/emoji.svg'
+import {useEffect} from "react";
 
 export default function Hero(){
+    useEffect(() => {
+        const handleKeyPress = (event) => {
+            // Check if the pressed key is the letter 'A' (you can replace 'A' with any letter)
+            if (event.key === 'b' || event.key === 'B') {
+                // Perform your desired functionality here
+                alert('You pressed the letter A!');
+            }
+        };
+
+        // Attach the event listener when the component mounts
+        document.addEventListener('keydown', handleKeyPress);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            document.removeEventListener('keydown', handleKeyPress);
+        };
+    }, []);
     return (
         <div className="bg-background text-center pt-10 px-5 md:px-20 text-body-text">
             <div className="flex items-center justify-center gap-1 md:gap-2">
