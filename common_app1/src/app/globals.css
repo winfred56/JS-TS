@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,4 +26,51 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
 
+}
+/*.nav-item{*/
+/*  @apply relative*/
+/*}*/
+
+/*.nav-item::after{*/
+/*  @apply content-[''] bg-[#3B89D7] h-1 w-[0%] absolute items-center justify-center left-0 bottom-0 rounded-3xl duration-300*/
+/*}*/
+
+/*.nav-item::after:hover{*/
+/*  @apply w-[100%]*/
+/*}*/
+
+.nav-item {
+  @apply relative;
+}
+
+.nav-item::after {
+  @apply content-[''] bg-[#3B89D7] h-[2px] w-[100%] absolute left-1/2 transform -translate-x-1/2 bottom-0 rounded-3xl duration-300;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.text-field {
+  @apply relative;
+}
+
+.text-field::after {
+  @apply content-[''] flex items-center justify-center bg-[#3B89D7] h-full w-0 absolute top-0 right-0 rounded-3xl duration-300;
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+  content: '';
+  display: none;
+}
+
+.show::after {
+  width: 0;
+  display: flex;
+}
+
+.hero-bg{
+  background-image: url("/home_page_hero_optimized.jpg");
+  /*object-fit: contain;*/
 }
