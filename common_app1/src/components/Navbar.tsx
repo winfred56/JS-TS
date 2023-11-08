@@ -10,7 +10,7 @@ export default function Navbar(){
     const [displayInputField, setDisplayInputField] = useState<boolean>(false)
     const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
     return (
-        <nav onScroll={()=>console.log("Winfred it is scrolling")} className={`w-full px-10 xl:px-10 2xl:px-80 py-5 lg:py-14 flex items-center justify-between`}>
+        <nav onScroll={()=>console.log("Winfred it is scrolling")} className={`flex items-center justify-between`}>
             <Image src={commonAppLogo} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} />
             <div className="lg:w-full font-body-text">
                 <ul className="w-full items-center justify-center hidden font-body-text text-white xl:flex">
@@ -73,7 +73,7 @@ export default function Navbar(){
                     </div>
                     <div className="min-w-max justify-end font-body-text hidden xl:flex flex-row gap-2">
                         <button
-                            className="bg-white text-black hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full">Sign in
+                            className="bg-white transition duration-300 ease-in-out text-black hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full">Sign in
                         </button>
                         <button
                             className="font-semibold bg-black bg-opacity-70 hover:bg-opacity-40 text-white px-6 py-3 rounded-full">
@@ -92,11 +92,11 @@ export default function Navbar(){
 
                     {/*Mobile Menu*/}
                     <div
-                        className={`${showMobileMenu ? 'block' : 'hidden'} bg-gradient-to-b from-[#4fb7da] to-[#1577c8] px-4 w-full left-0 xl:hidden absolute top-0`}>
+                        className={`${showMobileMenu ? 'block' : 'hidden'} bg-gradient-to-b from-[#4fb7da] to-[#1577c8] px-4 w-full pt-5 left-0 xl:hidden absolute top-0`}>
                         <Image src={commonAppLogo} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`}/>
                         <svg onClick={() => setShowMobileMenu(prevState => !prevState)} xmlns="http://www.w3.org/2000/svg"
                              fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
-                             className={`text-white w-6 h-6 cursor-pointer absolute right-10 top-2 ${showMobileMenu ? '' : 'hidden'}`}>
+                             className={`text-white w-6 h-6 cursor-pointer absolute mt-5 right-10 top-2 ${showMobileMenu ? '' : 'hidden'}`}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/>
                         </svg>
                         <input name="search"
@@ -105,7 +105,7 @@ export default function Navbar(){
                         <ul className="text-white">
                             <li className="font-bold text-lg cursor-pointer py-2">FIND A COLLEGE</li>
                             {NavMenuItems.map((menuItem, index) => (
-                                <div className={`text-base font-medium relative py-1 text-left`}>
+                                <div key={index} className={`text-base font-medium relative py-1 text-left`}>
                                     <li className={`flex items-center`}><Link href={menuItem.navNameLink}>{menuItem.navName}</Link>
                                         <span onClick={() => {
                                             hoveredItemIndex === null ? setHoveredItemIndex(index) : setHoveredItemIndex(null);

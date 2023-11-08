@@ -71,6 +71,37 @@ body {
 }
 
 .hero-bg{
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.25);
   background-image: url("/home_page_hero_optimized.jpg");
+
   /*object-fit: contain;*/
+}
+/*.hero-bg::before{*/
+/*  content: "" ;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background: rgba(0,0,0,0.2);*/
+/*  */
+/*}*/
+.container{
+  @apply bg-cover bg-fixed text-white font-body-text relative w-full px-10 xl:px-10 2xl:px-80 py-5 lg:py-14
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.draw-animation {
+  animation: draw 3s ease-in-out forwards;
 }
