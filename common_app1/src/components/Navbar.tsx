@@ -6,7 +6,7 @@ import NavMenu from "@/components/NavMenu";
 
 export default function Navbar(){
     return (
-        <nav onScroll={()=>console.log("Winfred it is scrolling")} className={`w-full px-10 lg:px-80 lg:py-10 flex items-center justify-between`}>
+        <nav onScroll={()=>console.log("Winfred it is scrolling")} className={`w-full px-10 xl:px-10 2xl:px-80 py-5 lg:py-14 flex items-center justify-between`}>
             <Image src={commonAppLogo} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} />
             <NavMenu />
         </nav>

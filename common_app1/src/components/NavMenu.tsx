@@ -12,7 +12,7 @@ export default function NavMenu() {
 
     return (
         <div className="lg:w-full font-body-text">
-            <ul className="w-full items-center justify-center hidden font-body-text text-white lg:flex">
+            <ul className="w-full items-center justify-center hidden font-body-text text-white xl:flex">
                 <div className="flex items-center justify-center gap-5 w-full">
                     {displayInputField ? (
 
@@ -70,7 +70,7 @@ export default function NavMenu() {
                         </>
                     )}
                 </div>
-                <div className="min-w-max justify-end font-body-text hidden lg:flex flex-row gap-2">
+                <div className="min-w-max justify-end font-body-text hidden xl:flex flex-row gap-2">
                     <button
                         className="bg-white text-black hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full">Sign in
                     </button>
@@ -80,7 +80,7 @@ export default function NavMenu() {
                     </button>
                 </div>
             </ul>
-            <div className="lg:hidden flex">
+            <div className="xl:hidden flex">
                 <div className="relative">
                     <svg onClick={() => setShowMobileMenu(prevState => !prevState)} xmlns="http://www.w3.org/2000/svg"
                          fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
@@ -91,7 +91,7 @@ export default function NavMenu() {
 
                 {/*Mobile Menu*/}
                 <div
-                    className={`${showMobileMenu ? 'block' : 'hidden'} bg-gradient-to-b from-[#4fb7da] to-[#1577c8] px-4 lg:hidden w-full left-0 absolute top-0`}>
+                    className={`${showMobileMenu ? 'block' : 'hidden'} bg-gradient-to-b from-[#4fb7da] to-[#1577c8] px-4 w-full left-0 xl:hidden absolute top-0`}>
                     <Image src={commonAppLogo} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`}/>
                     <svg onClick={() => setShowMobileMenu(prevState => !prevState)} xmlns="http://www.w3.org/2000/svg"
                          fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
