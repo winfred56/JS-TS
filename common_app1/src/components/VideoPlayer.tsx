@@ -25,7 +25,7 @@ export default function VideoPlayer() {
                     <Image
                         src={homeVideo}
                         alt="Custom Thumbnail"
-                        className="w-[60rem] object-cover"
+                        className="w-[80rem] object-cover"
                     />
                     {!isPlaying && (
                         <div className="absolute inset-0 flex items-center justify-center">
@@ -36,12 +36,15 @@ export default function VideoPlayer() {
                     )}
                 </div>
                 <div className="">
-                    <h2 className={`font-extrabold text-2xl`}>
-                        The world is ready for you.<br className={`hidden md:block`}/>Be ready for the world.
+                    <h2 className={`font-extrabold text-xl md:text-5xl`}>
+                        The world is ready for you.<br className={``}/>Be ready for the world.
                     </h2>
-                    <p>
+                    <p className={`mt-5`}>
                         Common App and Reach Higher have united to inspire more people to complete their education and own their future, no matter what it holds. Get valuable advice from students who have been in your shoes.
                     </p>
+                    <button className="bg-[#0b6dbd] mt-10 w-full sm:w-fit md:mt-16 text-white hover:bg-opacity-60 font-semibold text-sm px-6 py-3 rounded-full">
+                        learn about our access initiatives
+                    </button>
                 </div>
             </div>
             {/* Video element */}
@@ -52,7 +55,7 @@ export default function VideoPlayer() {
                 muted={true}
                 poster="/home-video_optimized.png"
                 src="https://www.youtube.com/watch?v=KGywXmB_Mwo"
-                className={`absolute top-0 left-0 w-full h-full object-cover ${isPlaying ? 'block' : 'hidden'}`}
+                className={`absolute top-0 left-0 w-[80rem] object-cover ${isPlaying ? 'block' : 'hidden'}`}
             >
                 Your browser does not support the video tag.
             </video>
