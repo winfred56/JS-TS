@@ -27,7 +27,7 @@ export default function Navbar(){
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     return (
-        <nav className="w-full fixed top-0">
+        <nav className="w-full fixed top-0 z-10">
             <div className={`flex items-center justify-between py-5 lg:py-8 px-10 md:px-20 xl:px-10 2xl:px-80`} style={{ background: navbarBackground }}>
                 {navbarBackground===`transparent`? <Image src={commonAppLogo} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} /> : <Image src={commonAppLogo2} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} />}
                 <div className="lg:w-full font-body-text">
@@ -59,9 +59,9 @@ export default function Navbar(){
                                             onMouseLeave={() => setHoveredItemIndex(null)}
                                             className="relative max-w-fit cursor-pointer pb-1 group font-medium flex items-center">
                                             <Link href={item.navNameLink}>{item.navName}</Link>
-                                            <span className={`text-${hoveredItemIndex === index ? "[#3B89D7]" : "white"}`}>
+                                            <span className={`${hoveredItemIndex === index ? "text-[#3B89D7]" : navbarBackground===`transparent`? "text-white": "text-black"}`}>
                                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                   strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-2">
+                                                   strokeWidth={1.5} stroke="currentColor" className={`${navbarBackground===`transparent`?`text-white`:`text-black`}w-4 h-4 ml-2`}>
                                                 <path strokeLinecap="round" strokeLinejoin="round"
                                                       d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
                                               </svg>
