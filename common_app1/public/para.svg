@@ -1,25 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="295px" height="141px" viewBox="0 0 295 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>659B56AC-0812-4E1A-935E-48A6C1BB46EA</title>
-    <desc>Created with sketchtool.</desc>
-    <g id="Desktop-R4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="0.0-Home-page-" transform="translate(-834.000000, -2269.000000)">
-            <g id="c5.0-three-cards-blue-gradient-desktop" transform="translate(0.000000, 2140.000000)">
-                <g id="air-balloon-illustration" transform="translate(835.000000, 130.000000)">
-                    <g id="air-ballon" transform="translate(0.000000, 33.819582)">
-                        <path d="M38.203,104.936431 L35.96,104.936431 C34.062,104.936431 32.407,103.645853 31.947,101.806878 L29,94.8954895 L45.162,94.8954895 L42.216,101.806878 C41.756,103.645853 40.101,104.936431 38.203,104.936431 Z" id="Stroke-1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M28.5,86.9042904 L28.5,93.9775006" id="Stroke-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M44.5,86.9042904 L44.5,93.9775006" id="Fill-5" fill="#FFFFFF"></path>
-                        <path d="M44.5,86.9042904 L44.5,93.9775006" id="Stroke-7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M37,0 C52,0.99889989 82,35.960396 41,86.9042904" id="Stroke-9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M36.7075031,0 C21.7075031,0.99889989 -8.29249692,35.960396 32.7075031,86.9042904" id="Stroke-11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M36.9771814,0 C23.2691814,7.99119912 19.5621814,43.9515952 35.2691814,86.9042904" id="Stroke-13" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M37,0 C50.708,7.99119912 54.415,43.9515952 38.708,86.9042904" id="Stroke-15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M37,85.9053905 L37,0 C18,0 0,13.9845985 0,37.9581958 C0,61.9527701 29,86.9042904 29,86.9042904 L45,86.9042904 C45,86.9042904 74,61.9527701 74,37.9581958 C74,13.9845985 56,0 37,0" id="Stroke-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="76" height="107" viewBox="0 0 76 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.203 105.936H36.96C35.062 105.936 33.407 104.646 32.947 102.807L30 95.8955H46.162L43.216 102.807C42.756 104.646 41.101 105.936 39.203 105.936Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.5 87.9043V94.9775" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.5 87.9043V94.9775" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 1C53 1.9989 83 36.9604 42 87.9043" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.7075 1C22.7075 1.9989 -7.2925 36.9604 33.7075 87.9043" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.9772 1C24.2692 8.9912 20.5622 44.9516 36.2692 87.9043" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 1C51.708 8.9912 55.415 44.9516 39.708 87.9043" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 86.9054V1M38 1C19 1 1 14.9846 1 38.9582C1 62.9528 30 87.9043 30 87.9043H46C46 87.9043 75 62.9528 75 38.9582C75 14.9846 57 1 38 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
