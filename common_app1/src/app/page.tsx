@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import scope from "../../public/scope.svg"
 import para_cloud from "../../public/para&cloud.svg"
 import para from "../../public/para.svg"
-import icon_direction from "../../public/icon-direction.svg"
 import SearchFilters from "@/components/SearchFilters";
 import VideoPlayer from "@/components/VideoPlayer";
 import Link from "next/link";
@@ -14,9 +13,9 @@ export default function Home() {
     return (
         <main className="font-body-text">
             <header
-                className={`hero-bg h-[22rem] sm:h-[35rem] xl:h-fit text-white font-body-text relative w-full px-10 md:px-20 xl:px-10 2xl:px-80 py-5 lg:py-11 `}>
+                className={`hero-bg h-[22rem] sm:h-[35rem] xl:h-fit text-white font-body-text relative `}>
                 <Navbar/>
-                <div className={`hidden xl:block`}>
+                <div className={`hidden xl:block  w-full px-10 md:px-20 xl:px-10 2xl:px-80`}>
                     <h1 className="text-7xl font-bold pt-36">
                         Your future <br/> starts here
                     </h1>
