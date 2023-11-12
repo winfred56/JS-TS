@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import scope from "../../public/scope.svg"
 import para_cloud from "../../public/para&cloud.svg"
+import book from "../../public/icon-book-sun.svg"
 import para from "../../public/para.svg"
 import SearchFilters from "@/components/SearchFilters";
 import VideoPlayer from "@/components/VideoPlayer";
@@ -95,34 +96,41 @@ export default function Home() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </div>
-
                         </div>
                     </div>
                     ))}
                 </div>
-                {/*<div className="flex-row flex gap-4 pt-10 md:pt-16">*/}
+            </div>
+            {/*<div className="flex items-center border-4 border-gradient">*/}
 
-                {/*    <div className="bg-white w-full p-10">*/}
-                {/*        <Image src={icon_direction} alt={`icon`} />*/}
-                {/*        <div className="w-56">*/}
-                {/*            <h3 className="pt-5 hover:underline underline-offset-1 md:text-xl font-extrabold text-sm">*/}
-                {/*                WHY COLLEGE <br className={`md:hidden`}/>MATTERS*/}
-                {/*            </h3>*/}
-                {/*            <hr className={`w-8 my-2 md:w-12 h-[5px] bg-black`}/>*/}
-                {/*            <p className={`py-5`}>*/}
-                {/*                College is worth it. Your future is worth it. You are worth it.*/}
-                {/*            </p>*/}
-                {/*            <div className="flex items-center">*/}
-                {/*                <p className={`font-extrabold hover:underline underline-offset-1`}>*/}
-                {/*                    <Link href={``}>Learn why college matters</Link>*/}
-                {/*                </p>*/}
-                {/*                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="items-center flex w-4 h-4">*/}
-                {/*                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />*/}
-                {/*                </svg>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+            {/*</div>*/}
+            <div className="md:mx-auto flex my-10 mx-10 items-center justify-center">
+                <div className="bg-gradient-to-r from-[#84d79c] via-[#c4e271] to-[#27c7db] p-3">
+                    <div className="w-full  p-5 md:p-10  bg-white">
+                        <div className={`flex items-start justify-center gap-5 lg:gap-16 xl:gap-48 md:flex-row flex-col-reverse`}>
+                            <h1 className="text-xl md:text-4xl font-extrabold text-black">
+                                Your complete college<br/>
+                                application guide
+                                <span>
+                                    <hr className={`w-8 mt-5 md:w-12 h-[5px] bg-black`}/>
+                                </span>
+                            </h1>
+                            <Image src={book} alt={`book icon`}/>
+                        </div>
+                        <p className={`py-5 w-fit md:w-96`}>
+                            It’s go time — and we’ll be with you every step of the way.
+                            Here’s where you’ll find what you need to take that next step towards a brighter future.
+                        </p>
+                        <div className={`flex flex-col md:flex-row gap-4`}>
+                            <button type="button" className={`bg-black text-sm md:text-base text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
+                                <Link href={`/apply/first-year-students`}>First-year student guide</Link>
+                            </button>
+                            <button type="button" className={`bg-black text-sm md:text-base  text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
+                                <Link href={`/apply/transfer-students`}>Transfer student guide</Link>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </main>
