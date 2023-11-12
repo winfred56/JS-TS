@@ -81,7 +81,7 @@ export default function Home() {
                         <Image src={plan.icon} alt={plan.title}/>
                         <div className="w-60 md:w-44 lg:w-64">
                             <h3 className="pt-5 hover:underline underline-offset-1 md:text-lg font-extrabold text-sm">
-                                {plan.title}
+                                <Link  href={plan.linkAddress}>{plan.title}</Link>
                             </h3>
                                 <hr className={`w-8 my-2 md:w-12 h-[5px] bg-black`}/>
                                 <p className={`py-5`}>
