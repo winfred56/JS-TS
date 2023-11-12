@@ -29,7 +29,9 @@ export default function Navbar(){
     return (
         <nav className="w-full fixed top-0 z-10">
             <div className={`flex items-center justify-between py-5 lg:py-8 px-10 md:px-20 xl:px-10 2xl:px-80`} style={{ background: navbarBackground }}>
-                {navbarBackground===`transparent`? <Image src={commonAppLogo} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} /> : <Image src={commonAppLogo2} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} />}
+                <Link href={``}>
+                    {navbarBackground===`transparent`? <Image src={commonAppLogo} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} /> : <Image src={commonAppLogo2} alt={`commonAppLogo`} className={`sm:w-[80px] w-[100px] md:w-[170px]`} />}
+                </Link>
                 <div className="lg:w-full font-body-text">
                     <ul className={`w-full items-center justify-center hidden font-body-text ${navbarBackground===`transparent` ? `text-white`:`text-black`} xl:flex`}>
                         <div className="flex items-center justify-center gap-5 w-full">
@@ -50,7 +52,7 @@ export default function Navbar(){
                                 /// Nav Items
                                 <>
                                     <li className={`${navbarBackground===`transparent` ? `text-white` : `text-black`}relative max-w-fit flex items-center justify-center nav-item font-bold text-xl cursor-pointer pb-1`}>
-                                        FIND A COLLEGE
+                                        <Link href={`/explore`}>FIND A COLLEGE</Link>
                                     </li>
                                     {NavMenuItems.map((item, index) => (
                                         <li
