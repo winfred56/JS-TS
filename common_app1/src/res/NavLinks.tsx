@@ -24,7 +24,7 @@ export const NavMenuItems = [
         navNameLink: "/counselors-and-recommenders",
         subMenu: [
             {subNavName: "Recommender system", subMenuLink: "/counselors-and-recommenders/recommender-system"},
-            {subNavName: "Common App Ready toolkit", subMenuLink: "/counselors-and-recommenders/recommender-guide"},
+            {subNavName: "Common App Ready toolkit", subMenuLink: "/counselors-and-recommenders/common-app-ready"},
             {subNavName: "Recommender guide", subMenuLink: "/counselors-and-recommenders/recommender-guide"},
             {subNavName: "Transfer advisors", subMenuLink: "/transfer-counselors-and-advisors"},
             {subNavName: "News and updates", subMenuLink: "/blog"},
