@@ -6,6 +6,7 @@ import book from "../../public/icon-book-sun.svg"
 import para from "../../public/para.svg"
 import institution from "../../public/icon-institution.svg"
 import owl from "../../public/icon-owl.svg"
+import create_account from "../../public/create-an-account.png"
 import SearchFilters from "@/components/SearchFilters";
 import VideoPlayer from "@/components/VideoPlayer";
 import Link from "next/link";
@@ -166,13 +167,24 @@ export default function Home() {
                                     <hr className={`w-8 mt-5 md:w-12 h-[5px] bg-black`}/>
                                 </span>
                             </h1>
-                            <Image src={owl} width={50} alt={`owl icon`}/>
+                            <Image src={institution} width={50} alt={`owl icon`}/>
                         </div>
                         <p className={`py-10 font-medium w-fit md:w-96`}>
                             We strive for access, equity, and integrity in the college admission process. Your membership makes it all possible.
                         </p>
                         <button type="button" className={`bg-black text-xs md:text-base mt-5 lg:mt-10 text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
                             <Link href={`/members`}>Access member resources</Link>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className="text-white bg-[#f3f3f3] main-container">
+                <div className={`bg-gradient-to-r from-[#2a77c6] to-[#5dc5df] flex-col md:flex-row gap-4 md:gap-10 lg:gap-20 items-center flex p-4`}>
+                    <Image src={create_account} height={300} alt={`pic`} />
+                    <div className={``}>
+                        <h2 className={`text-xl md:text-3xl xl:text-6xl font-extrabold`}>Have a question?</h2>
+                        <button type="button" className={`bg-white text-xs w-full md:w-fit md:text-base mt-5 lg:mt-10 text-black transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
+                            <Link href={`/help`}>Contact our support team</Link>
                         </button>
                     </div>
                 </div>
