@@ -11,35 +11,34 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <h2 className="text-xl font-extrabold text-white">The Common Application</h2>
                         <ul className="list-none mt-4">
-                            <li><Link href="#" className="text-white">About</Link></li>
-                            <li><Link href="#" className="text-white">Contact</Link></li>
-                            <li><Link href="#" className="text-white">News and updates</Link></li>
+                            <li><Link href={`/about`} className="text-white">About</Link></li>
+                            <li><Link href={`/contact`} className="text-white">Contact</Link></li>
+                            <li><Link href={`/blog`} className="text-white">News and updates</Link></li>
                         </ul>
                     </div>
                     <div className="mb-6 md:mb-0">
                         <h2 className="text-xl font-semibold text-white">Access and equity</h2>
                         <ul className="list-none mt-4">
-                            <li><Link href="#" className="">Leadership</Link></li>
-                            <li><Link href="#" className="">Become a member</Link></li>
-                            <li><Link href="#" className="">Help</Link></li>
+                            <li><Link href={`/about/board-of-directors`} className="">Leadership</Link></li>
+                            <li><Link href={`/members`} className="">Become a member</Link></li>
+                            <li><Link href={`/help`} className="">Help</Link></li>
                         </ul>
                     </div>
                     <div className="mb-6 md:mb-0">
-                        <h2 className="text-xl font-semibold text-white">Guiding principles</h2>
+                        <h2 className="text-xl font-semibold text-white"><Link href={`/about/guiding-principles`}>Guiding principles</Link></h2>
                         <ul className="list-none mt-4 text-white">
-                            <li><Link href="#" className="">Next Chapter</Link></li>
-                            <li><Link href="#" className="">Impact</Link></li>
-                            <li><Link href="#" className="">Partners</Link></li>
-                            <li><Link href="#" className="">Careers</Link></li>
-                            <li><Link href="#" className="">Events</Link></li>
+                            <li><Link href={`/about/next-chapter`} className="">Next Chapter</Link></li>
+                            <li><Link href={`/about/common-app-impact`} className="">Impact</Link></li>
+                            <li><Link href={`/about/partners`} className="">Partners</Link></li>
+                            <li><Link href={`/careers`} className="">Careers</Link></li>
+                            <li><Link href={`/events`} className="">Events</Link></li>
                         </ul>
                     </div>
                     <div className="mb-6 md:mb-0">
                         <h2 className="text-xl font-semibold text-white">Join our board</h2>
                         <ul className="list-none mt-4">
-                            <li><Link href="#" className="">Reports and insights</Link></li>
-                            <li><Link href="#" className="text-white">Connect with <span
-                                className={`text-[#5accc8]`}>#commonapp</span></Link></li>
+                            <li><Link href={`/about/reports-and-insights`} className="">Reports and insights</Link></li>
+                            <li>Connect with <span className={`text-[#5accc8]`}>#commonapp</span></li>
                         </ul>
                     </div>
                 </div>

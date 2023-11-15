@@ -6,7 +6,10 @@ import book from "../../public/icon-book-sun.svg"
 import para from "../../public/para.svg"
 import institution from "../../public/icon-institution.svg"
 import owl from "../../public/icon-owl.svg"
+import young from "../../public/young-man-military-student_0.jpg"
 import create_account from "../../public/create-an-account.png"
+import city_person from "../../public/city-year-street-with-person-in-jacket.jpg"
+import asian from "../../public/asian-student-woman.jpg"
 import SearchFilters from "@/components/SearchFilters";
 import VideoPlayer from "@/components/VideoPlayer";
 import Link from "next/link";
@@ -137,6 +140,34 @@ export default function Home() {
             {/*Blog*/}
             <div className={`text-black bg-[#f3f3f3] main-container`}>
                 <h2 className={`text-black font-extrabold text-xl md:text-6xl`}>Blog</h2>
+                <div className={`md:flex flex-row gap-4`}>
+                    <div className={`py-5 md:py-10 relative flex flex-col justify-between`}>
+                        <div className={`bg-white h-96 md:h-[26rem] w-52 md:w-64 lg:w-fit`}>
+                            <Image src={young} className={`w-full object-cover`} height={250} alt={``}/>
+                            <h3 className={`p-5 font-bold w-40 md:w-52 lg:w-80 md:text-lg hover:underline underline-offset-1`}>Common App announces partnership with DOD MilGears </h3>
+                            <p className={`p-5 absolute bottom-5 md:bottom-10 text-gray-500`}>November 03, 2023</p>
+                        </div>
+                    </div>
+                    <div className={`py-5 md:py-10 relative flex flex-col justify-between`}>
+                        <div className={`bg-white h-96 md:h-[26rem] w-52 md:w-fit`}>
+                            <Image src={asian} className={`w-full object-cover`} height={250} alt={``}/>
+                            <h3 className={`p-5 font-bold w-40 md:w-80 md:text-lg hover:underline underline-offset-1`}>Direct admissions program with 70 colleges and universities</h3>
+                            <p className={`p-5 absolute bottom-5 md:bottom-10 text-gray-500`}>November 03, 2023</p>
+                        </div>
+                    </div>
+                    <div className={`py-5 relative md:py-10 flex flex-col justify-between`}>
+                        <div className={`bg-white w-52 h-96 md:h-[26rem] md:w-fit`}>
+                            <Image src={city_person} className={`object-cover`} height={250} alt={``}/>
+                            <h3 className={`p-5 font-bold w-40 md:w-80 md:text-lg hover:underline underline-offset-1`}>You can now apply to City Year on the Common App</h3>
+                            <p className={`p-5 absolute bottom-5 md:bottom-10 text-gray-500`}>October 25, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={`flex items-center justify-center py-5`}>
+                    <button type="button" className={`bg-[#0B6DBD] text-sm md:text-base text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
+                        <Link href={`/blog`}>Transfer student guide</Link>
+                    </button>
+                </div>
             </div>
             <div className={`main-container flex flex-col gap-4 md:w-fit md:mx-auto lg:flex-row`}>
                 <div className={`bg-gradient-to-r from-[#84d79c] via-[#c4e271] to-[#27c7db] lg:h-96 p-4`}>
@@ -180,6 +211,9 @@ export default function Home() {
                 </div>
             </div>
             <div className="text-white bg-[#f3f3f3] main-container">
+                <h2 className={`text-black font-extrabold text-xl md:text-6xl`}>Events and webinars</h2>
+            </div>
+            <div className="text-white main-container">
                 <div className={`bg-gradient-to-r from-[#2a77c6] to-[#5dc5df] flex-col md:flex-row gap-4 md:gap-10 lg:gap-20 items-center flex p-4`}>
                     <Image src={create_account} height={300} alt={`pic`} />
                     <div className={``}>
