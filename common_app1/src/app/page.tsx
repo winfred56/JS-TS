@@ -142,23 +142,23 @@ export default function Home() {
                 <h2 className={`text-black font-extrabold text-xl md:text-6xl`}>Blog</h2>
                 <div className={`md:flex flex-row gap-4`}>
                     <div className={`py-5 md:py-10 relative flex flex-col justify-between`}>
-                        <div className={`bg-white h-96 md:h-[26rem] w-52 md:w-64 lg:w-fit`}>
+                        <div className={`bg-white h-96 md:h-[26rem] w-full md:w-64 lg:w-fit`}>
                             <Image src={young} className={`w-full object-cover`} height={250} alt={``}/>
-                            <h3 className={`p-5 font-bold w-40 md:w-52 lg:w-80 md:text-lg hover:underline underline-offset-1`}>Common App announces partnership with DOD MilGears </h3>
+                            <h3 className={`p-5 font-bold w-60 md:w-52 lg:w-80 md:text-lg hover:underline underline-offset-1`}>Common App announces partnership with DOD MilGears </h3>
                             <p className={`p-5 absolute bottom-5 md:bottom-10 text-gray-500`}>November 03, 2023</p>
                         </div>
                     </div>
                     <div className={`py-5 md:py-10 relative flex flex-col justify-between`}>
-                        <div className={`bg-white h-96 md:h-[26rem] w-52 md:w-fit`}>
+                        <div className={`bg-white h-96 md:h-[26rem] w-full md:w-fit`}>
                             <Image src={asian} className={`w-full object-cover`} height={250} alt={``}/>
-                            <h3 className={`p-5 font-bold w-40 md:w-80 md:text-lg hover:underline underline-offset-1`}>Direct admissions program with 70 colleges and universities</h3>
+                            <h3 className={`p-5 font-bold w-60 md:w-80 md:text-lg hover:underline underline-offset-1`}>Direct admissions program with 70 colleges and universities</h3>
                             <p className={`p-5 absolute bottom-5 md:bottom-10 text-gray-500`}>November 03, 2023</p>
                         </div>
                     </div>
                     <div className={`py-5 relative md:py-10 flex flex-col justify-between`}>
-                        <div className={`bg-white w-52 h-96 md:h-[26rem] md:w-fit`}>
+                        <div className={`bg-white w-full h-96 md:h-[26rem] md:w-fit`}>
                             <Image src={city_person} className={`object-cover`} height={250} alt={``}/>
-                            <h3 className={`p-5 font-bold w-40 md:w-80 md:text-lg hover:underline underline-offset-1`}>You can now apply to City Year on the Common App</h3>
+                            <h3 className={`p-5 font-bold w-60 md:w-80 md:text-lg hover:underline underline-offset-1`}>You can now apply to City Year on the Common App</h3>
                             <p className={`p-5 absolute bottom-5 md:bottom-10 text-gray-500`}>October 25, 2023</p>
                         </div>
                     </div>
