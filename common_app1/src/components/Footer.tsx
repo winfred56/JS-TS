@@ -1,4 +1,3 @@
-import {retokenizeSlashAsRegex} from "sucrase/dist/types/parser/tokenizer";
 import Link from "next/link";
 import Image from "next/image";
 import bike from "../../public/girl-bike.svg"
@@ -40,7 +39,6 @@ export default function Footer(){
                             <ul className="list-none mt-4">
                                 <li><Link href="#" className="">Reports and insights</Link></li>
                                 <li><Link href="#" className="text-white">Connect with <span className={`text-[#5accc8]`}>#commonapp</span></Link></li>
-
                             </ul>
                         </div>
                     </div>
@@ -51,13 +49,13 @@ export default function Footer(){
                 </div>
                 <hr className={`h-[2px] border-0 bg-[#5accc8]`}/>
                 <div className={`main-container md:flex justify-between`}>
-                    <ul className={`md:flex gap-10 `}>
-                        <li>Terms of use</li>
-                        <li>Privacy policy</li>
-                        <li>Fraud policy</li>
-                        <li>Application affirmation</li>
+                    <ul className={`md:flex gap-10 text-[#5accc8] font-semibold cursor-pointer`}>
+                        <li><Link href={``}>Terms of use</Link></li>
+                        <li><Link href={``}>Privacy policy</Link></li>
+                        <li><Link href={``}>Fraud policy</Link></li>
+                        <li><Link href={``}>Application affirmation</Link></li>
                     </ul>
-                    <p className="text-gray-500 text-sm dark:text-gray-400">© 2023 The Common Application.</p>
+                    <p className="text-gray-500 text-sm pt-5 md:pt-0 dark:text-gray-400">© 2023 The Common Application.</p>
                 </div>
             </footer>
     )
