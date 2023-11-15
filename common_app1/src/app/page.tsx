@@ -4,6 +4,8 @@ import scope from "../../public/scope.svg"
 import para_cloud from "../../public/para&cloud.svg"
 import book from "../../public/icon-book-sun.svg"
 import para from "../../public/para.svg"
+import institution from "../../public/icon-institution.svg"
+import owl from "../../public/icon-owl.svg"
 import SearchFilters from "@/components/SearchFilters";
 import VideoPlayer from "@/components/VideoPlayer";
 import Link from "next/link";
@@ -58,7 +60,7 @@ export default function Home() {
                     <SearchFilters/>
                 </div>
             </div>
-            <div className={`px-10 text-black bg-[#f3f3f3] w-full py-20 md:py-48 xl:px-10 md:px-20 2xl:px-80`}>
+            <div className={`px-10 text-black bg-[#f3f3f3] w-full py-20 md:py-36 xl:px-10 md:px-20 2xl:px-80`}>
                 <VideoPlayer/>
             </div>
             <div
@@ -101,10 +103,8 @@ export default function Home() {
                     ))}
                 </div>
             </div>
-            {/*<div className="flex items-center border-4 border-gradient">*/}
 
-            {/*</div>*/}
-            <div className="md:mx-auto flex my-10 mx-10 items-center justify-center">
+            <div className="md:mx-auto flex my-10 md:my-20 mx-10 items-center justify-center">
                 <div className="bg-gradient-to-r from-[#84d79c] via-[#c4e271] to-[#27c7db] p-3">
                     <div className="w-full  p-5 md:p-10  bg-white">
                         <div className={`flex items-start justify-center gap-5 lg:gap-16 xl:gap-48 md:flex-row flex-col-reverse`}>
@@ -117,11 +117,11 @@ export default function Home() {
                             </h1>
                             <Image src={book} alt={`book icon`}/>
                         </div>
-                        <p className={`py-5 w-fit md:w-96`}>
+                        <p className={`py-5 font-medium w-fit md:w-96`}>
                             It’s go time — and we’ll be with you every step of the way.
                             Here’s where you’ll find what you need to take that next step towards a brighter future.
                         </p>
-                        <div className={`flex flex-col md:flex-row gap-4`}>
+                        <div className={`mt-5 md:my-10 flex flex-col md:flex-row gap-4`}>
                             <button type="button" className={`bg-black text-sm md:text-base text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
                                 <Link href={`/apply/first-year-students`}>First-year student guide</Link>
                             </button>
@@ -132,7 +132,51 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
+            {/*Blog*/}
+            <div className={`text-black bg-[#f3f3f3] main-container`}>
+                <h2 className={`text-black font-extrabold text-xl md:text-6xl`}>Blog</h2>
+            </div>
+            <div className={`main-container flex flex-col gap-4 md:w-fit md:mx-auto lg:flex-row`}>
+                <div className={`bg-gradient-to-r from-[#84d79c] via-[#c4e271] to-[#27c7db] lg:h-96 p-4`}>
+                    <div className={`bg-white lg:h-[22rem] p-4`}>
+                        <div className={`flex flex-col-reverse lg:flex-row lg:justify-between`}>
+                            <h1 className="text-lg md:text-xl lg:text-xl font-extrabold text-black">
+                                For counselors and <br className={`hidden lg:block`}/>
+                                recommenders
+                                <span>
+                                    <hr className={`w-8 mt-5 md:w-12 h-[5px] bg-black`}/>
+                                </span>
+                            </h1>
+                            <Image src={owl} width={50} alt={`owl icon`}/>
+                        </div>
+                        <p className={`py-10 font-medium w-fit md:w-96`}>
+                            Thanks to you, your students aren’t alone. We’re here to make sure you’re not either.
+                        </p>
+                        <button type="button" className={`bg-black mt-5 lg:mt-10 text-xs md:text-base text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
+                            <Link href={`/counselors-and-recommenders`}>Access counselor resources</Link>
+                        </button>
+                    </div>
+                </div>
+                <div className={`bg-gradient-to-r from-[#1474c8] via-10% to-[#56d2e0] lg:h-96 p-4`}>
+                    <div className={`bg-white lg:h-[22rem] p-4`}>
+                        <div className={`flex flex-col-reverse lg:flex-row lg:justify-between`}>
+                            <h1 className="text-lg md:text-xl font-extrabold text-black">
+                                For member institutions
+                                <span>
+                                    <hr className={`w-8 mt-5 md:w-12 h-[5px] bg-black`}/>
+                                </span>
+                            </h1>
+                            <Image src={owl} width={50} alt={`owl icon`}/>
+                        </div>
+                        <p className={`py-10 font-medium w-fit md:w-96`}>
+                            We strive for access, equity, and integrity in the college admission process. Your membership makes it all possible.
+                        </p>
+                        <button type="button" className={`bg-black text-xs md:text-base mt-5 lg:mt-10 text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
+                            <Link href={`/members`}>Access member resources</Link>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </main>
     )
 }

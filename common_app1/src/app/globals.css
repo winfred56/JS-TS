@@ -90,8 +90,8 @@ body {
 /*  background: rgba(0,0,0,0.2);*/
 /*  */
 /*}*/
-.container{
-  @apply bg-cover bg-fixed text-white font-body-text relative w-full px-10 xl:px-10 2xl:px-80 py-5 lg:py-14
+.main-container{
+  @apply bg-cover bg-fixed font-body-text relative w-full px-10 xl:px-10 2xl:px-80 py-5 lg:py-14
 }
 
 @keyframes draw {
