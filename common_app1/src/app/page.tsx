@@ -10,6 +10,8 @@ import young from "../../public/young-man-military-student_0.jpg"
 import create_account from "../../public/create-an-account.png"
 import city_person from "../../public/city-year-street-with-person-in-jacket.jpg"
 import asian from "../../public/asian-student-woman.jpg"
+import location from "../../public/location.svg"
+import teen_lady from "../../public/teen-lady_sml_0.jpg"
 import SearchFilters from "@/components/SearchFilters";
 import VideoPlayer from "@/components/VideoPlayer";
 import Link from "next/link";
@@ -212,14 +214,24 @@ export default function Home() {
             </div>
             <div className="text-white bg-[#f3f3f3] main-container">
                 <h2 className={`text-black font-extrabold text-xl md:text-6xl`}>Events and webinars</h2>
-                <div>
+                <div className={`py-5 md:py-10`}>
                     <div className="bg-white md:mx-auto pt-10 md:w-fit text-black p-5">
                         <div className="text-left ">
                             <h2 className={`text-[#0B6DBD] font-bold text-xl md:text-3xl`}>04</h2>
                             <h2 className={`text-[#0B6DBD] `}>Jan</h2>
                         </div>
                         <h3 className={`hover:underline underline-offset-1 font-bold text-xl`}>SVA national conference</h3>
-                        <p className={`py-5 md:py-10`}>The SVA National Conference is the world's largest gathering for student veterans. </p>
+                        <p className={`py-5 md:w-56 md:py-10`}>The SVA National Conference is the world's largest gathering for student veterans. </p>
+                        <div className="flex">
+                            <Image src={location} alt={`icon`}/>
+                            <p className={`font-bold md:text-lg pl-2`}>Nashville, TN</p>
+                        </div>
+                        <Image className={`pt-4`} src={teen_lady} alt={`pic`}/>
+                    </div>
+                    <div className={`flex items-center justify-center pt-5`}>
+                        <button type="button" className={`bg-[#0B6DBD] text-sm md:text-base text-white transition duration-300 ease-in-out hover:bg-opacity-60 font-semibold px-6 py-3 rounded-full`}>
+                            <Link href={`/events`}>See all events</Link>
+                        </button>
                     </div>
                 </div>
             </div>

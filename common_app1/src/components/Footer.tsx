@@ -50,10 +50,10 @@ export default function Footer() {
             <hr className={`h-[2px] border-0 bg-[#5accc8]`}/>
             <div className={`main-container md:flex justify-between`}>
                 <ul className={`md:flex gap-10 text-[#5accc8] font-semibold cursor-pointer`}>
-                    <li><Link href={``}>Terms of use</Link></li>
-                    <li><Link href={``}>Privacy policy</Link></li>
-                    <li><Link href={``}>Fraud policy</Link></li>
-                    <li><Link href={``}>Application affirmation</Link></li>
+                    <li><Link href={`/terms-of-use`}>Terms of use</Link></li>
+                    <li><Link href={`/privacy-policy`}>Privacy policy</Link></li>
+                    <li><Link href={`/fraud-policy`}>Fraud policy</Link></li>
+                    <li><Link href={`/application-affirmation`}>Application affirmation</Link></li>
                 </ul>
                 <p className="text-gray-500 text-sm pt-5 md:pt-0 dark:text-gray-400">© 2023 The Common Application.</p>
             </div>
