@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import home_hero from "../../public/home_page_hero_optimized.jpg";
 import scope from "../../public/scope.svg"
 import para_cloud from "../../public/para&cloud.svg"
 import book from "../../public/icon-book-sun.svg"
@@ -23,7 +24,7 @@ export default function Home() {
     return (
         <main className="font-body-text">
             <header
-                className={`hero-bg h-[22rem] sm:h-[35rem] xl:h-fit text-white font-body-text relative `}>
+                className={`hero-bg bg-[url('/home_page_hero_optimized.jpg')] h-[22rem] sm:h-[35rem] xl:h-fit text-white font-body-text relative `}>
                 <Navbar/>
                 <div className={`hidden xl:block  w-full px-10 md:px-20 xl:px-10 2xl:px-80`}>
                     <h1 className="text-7xl font-bold pt-36">
