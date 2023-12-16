@@ -1,6 +1,22 @@
+import {motion, useMotionValueEvent, useScroll} from "framer-motion";
+import {useEffect, useState} from "react";
 export default function Navbar (){
+    const {scrollY} = useScroll()
+    const [hiddenNavbar, sethiddenNavbar] = useState(false)
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        const prevScrollY = scrollY.getPrevious()
+        if(latest > prevScrollY && latest > 250){
+            sethiddenNavbar(true)
+        }else {
+            sethiddenNavbar(false)
+        }
+    })
+
     return (
-        <header className="bg-background px-20 align-middle">
+        <motion.header variants={{
+            visible: { y: 0},
+            hidden: { y: "-100%"}
+        }} animate={hiddenNavbar ? `hidden` : `visible`} transition={{duration:.5, ease:"easeInOut"}} className="bg-background sticky top-0 z-10 px-20 align-middle">
             <nav className="grid grid-flow-row-dense grid-cols-1 md:grid-cols-3 w-full">
                 <div className="hidden md:block">
                     <ul className="flex gap-2 p-10 text-white text-xl font-body-text font-medium">
@@ -16,6 +32,6 @@ export default function Navbar (){
                     <p className="border font-body-text text-xl border-[#343434] rounded-lg bg-[#181818] p-4">Press&#160;&#160;<span className="text-xl py-2 px-4 rounded-lg bg-[#303030]">B</span>&#160;&#160;to book a call</p>
                 </div>
             </nav>
-        </header>
+        </motion.header>
     )
 }
