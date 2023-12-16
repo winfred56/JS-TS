@@ -9,7 +9,7 @@ export default function Hero(){
             // Check if the pressed key is the letter 'A' (you can replace 'A' with any letter)
             if (event.key === 'b' || event.key === 'B') {
                 // Perform your desired functionality here
-                alert('You pressed the letter A!');
+                alert('You pressed the letter B!');
             }
         };
 
