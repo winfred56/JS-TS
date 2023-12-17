@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Reviews from "./components/Reviews";
 import Footer from "./components/footer";
 import Questions from "./components/Questions";
+import Animations from "./components/animations";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Precess />
             <Testimonial />
             <Services />
+            <Animations/>
             <Reviews />
             <Questions />
             <Footer />
