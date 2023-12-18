@@ -9,20 +9,20 @@ export default function Animations(){
     const isInView = useInView(ref, {amount:0.8, once:true})
     const defaultsAnimation = {
         hidden: {
-            opacity: 0,
+            opacity: 0.2,
             y: 10
         },
         visible: {
             opacity: 1,
             y: 0,
-            transition:{duration:1}
+            // transition:{duration:1}
         }
     }
     return(
         <section className="text-white">
             <h1 className="text-7xl">
                 <span className="sr-only">{text1}</span>
-                <motion.span ref={ref} initial="hidden" animate={isInView ? "visible" : "hidden"} transition={{staggerChildren:0.1}} aria-hidden className="">
+                <motion.span ref={ref} initial="hidden" animate={isInView ? "visible" : "hidden"} transition={{staggerChildren:0.05}} aria-hidden className="">
                     {text1.split(" ").map((word) => (
                         <span className="inline-block">
                             {word.split("").map((letter) => (<motion.span className="inline-block"
@@ -33,6 +33,7 @@ export default function Animations(){
 
                 </motion.span>
             </h1>
+
         </section>
     )
 }

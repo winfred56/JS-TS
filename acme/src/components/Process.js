@@ -4,10 +4,22 @@ import one from "./../assets/1.svg"
 import arrow from "./../assets/arrow-scribble.svg"
 import two from "./../assets/2.svg"
 import three from "./../assets/3.svg"
+import {useRef} from "react"
+import {motion, useScroll, useTransform} from "framer-motion";
 
 export default function Precess() {
+    const ref = useRef(null)
+    const {scrollYProgress} = useScroll({
+        target: ref,
+        offset: ["0 1", "1.33 1.5"]
+    })
+    const scaleProgress = useTransform(scrollYProgress, [0,1], [0.7,1])
     return (
-        <div className="bg-background text-center text-sm md:text-base pt-10 md:pt-20 px-5 text-body-text">
+        <motion.div ref={ref} style={{
+            opacity: scrollYProgress,
+            scale: scaleProgress
+        }}
+             className="bg-background text-center text-sm md:text-base pt-10 md:pt-20 px-5 text-body-text">
             <div className="rounded-lg mx:5 md:mx-20 bg-gradient-to-b from-[#191919] to-[#131313]">
                 <p className="font-body-text text-body-text py-5 md:py-10">HOW IT WORKS</p>
                 <div className="flex flex-row items-center text-center justify-center space-x-5">
@@ -46,7 +58,7 @@ export default function Precess() {
                 <button type="button" className="rounded-lg bg-white p-3.5 lg:p-4 px-10 lg:px-16 text-md lg:text-lg font-bold text-black tracking-tight cursor-pointer hover:scale-105 transition duration-300 ease-out my-10 md:my-20">Get started today</button>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 
