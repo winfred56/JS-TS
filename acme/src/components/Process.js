@@ -11,13 +11,14 @@ export default function Precess() {
     const ref = useRef(null)
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ["0 1", "1.33 1.5"]
+        offset: ["0 1", "1.33 1.5"],
+        amount: {once: true}
     })
-    const scaleProgress = useTransform(scrollYProgress, [0,1], [0.7,1])
+    const scaleProgress = useTransform(scrollYProgress, [0,1], [0.9,1])
     return (
         <motion.div ref={ref} style={{
             opacity: scrollYProgress,
-            scale: scaleProgress
+            scale: scaleProgress,
         }}
              className="bg-background text-center text-sm md:text-base pt-10 md:pt-20 px-5 text-body-text">
             <div className="rounded-lg mx:5 md:mx-20 bg-gradient-to-b from-[#191919] to-[#131313]">
