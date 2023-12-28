@@ -34,13 +34,13 @@ const Home: React.FC = () => {
         <main className="flex min-h-screen flex-col items-center justify-center p-24">
             <p className="">Todo</p>
             <form onSubmit={onsubmitController} className="">
-                <input className="text-black" onChange={(event)=>setTitle(event.target.value)} type="text" placeholder="Post Title"/>
+                <input className="text-black block my-4" onChange={(event)=>setTitle(event.target.value)} type="text" placeholder="Post Title"/>
                 <input className="text-black" onChange={(event)=>setDescription(event.target.value)} type="text" placeholder="Post Description"/>
             </form>
             <button
                 type="submit"
                 onClick={() => createPostMethod()}
-                className="px-16 py-8 bg-blue-400"
+                className="px-12 py-4 my-4 rounded bg-blue-400"
             >
                 Test Firebase
             </button>
